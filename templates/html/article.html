@@ -1,0 +1,434 @@
+<!doctype html>
+
+<html>
+    <head>
+        <!--外部js文件导入，以及icon的搭建-->
+        <link rel="icon" href="../../icon/yzx.png" >
+
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!--外部js文件导入，以及icon的搭建-->
+
+        <meta charset="utf-8"> 
+
+
+        <!--==============================================CSS部分=================================================-->
+        <style>
+
+            @font-face {
+                font-family:xueb;
+                src: url(../../static/font/f1.ttf);
+            }
+            
+            html
+            {
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                font-family: xueb;
+            }
+            
+            body
+            {
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                background-color:rgb(246, 247, 249);
+                font-family: xueb;
+            }
+            a
+            {
+                text-decoration: none;
+            }
+            
+            a:visited
+            {
+                text-decoration: none;
+            }
+            a:hover
+            {
+                text-decoration:none;/*指鼠标在链接*/
+            }
+            a:active
+            {
+                text-decoration:none;
+            }
+            .left
+            {
+                float:left;
+                font-size: 21px;
+                background-color:rgb(233, 245, 255);
+                height : 100%;
+                width: 15%;
+                position:fixed;
+                margin: 0px;  
+                padding-top: 0px;         
+                padding-bottom: 20px;    
+                padding-right: 0px;
+                padding-left: 0px;
+                z-index:999;
+            }
+            .left-false
+            {
+                float:left;
+                background-color:rgb(233, 245, 255);
+                height : 100%;
+                width: 15%;
+                margin: 0px;  
+                padding: 20px;          
+                z-index:998;
+            }
+            .top
+            {
+                float: top;
+                background-color:rgb(255,255,255);
+                /*background-color:rgb(110, 127, 160);*/
+                height : auto;
+                width: 100%;
+                position:fixed ;
+                margin: 0px;
+                padding: 14px;
+                display :flex;
+                z-index:1000;
+            }
+            .top-false
+            {
+                float: top;
+                background-color:rgb(255,255,255);
+                height : 10%;
+                width: 100%;
+                margin: 0px;
+                padding: 12px;
+                display :flex;
+            }
+            .undertop{
+                padding: 0px;
+                margin: 0px;
+                width:100%;
+                height: 100%;
+                display: flex;
+            }
+            .middle
+            {
+                float: right;
+                background-color:rgb(246, 247, 249);
+                height : 105%;
+                width: 85%;
+                padding-left:20px;
+                padding-right:20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                /*display :flex;*/
+                margin: 20px;
+            }
+            .card-PARCOLOR
+            {
+                background-color:rgb(253, 253, 222);
+                border: none;
+                outline: none;  
+                border-radius: 10px; /* 圆角 */
+                padding: 5px;
+                margin-bottom: 15px;
+                margin-top: 10px;
+                width: 100%;
+                height:fit-content;
+                text-align: left;
+                padding: 20px;
+            }
+            .card-BOTTOM
+            {
+                background-color:rgb(253, 253, 222);
+                border: none;
+                outline: none;  
+                border-radius: 10px; /* 圆角 */
+                padding: 5px;
+                margin-bottom: 15px;
+                margin-top: 10px;
+                float: none;
+                width: 100%;
+                height: auto;
+                text-align:center;
+                padding: 20px;
+            }
+            .leftdht
+            {
+                background-color:rgb(233, 245, 255);
+                margin: 0px;
+                padding: 10px;
+                width: 100%;
+                height: auto;
+            }
+            .leftdhting
+            {
+                background-color:rgb(246, 247, 249);
+                margin: 0px;
+                padding: 10px;
+                width: 100%;
+                height: auto;
+            }
+            .lb
+            {
+                width:100%;
+            }
+            .logo
+            {
+                height :auto;
+            }
+            
+        </style>
+        <script>
+            function changecolorgrey(){
+                $(".leftdht").css("background-color","rgb(246, 247, 249)");
+            }
+            function changecolorblue(){
+                $(".leftdht").css("background-color","rgb(233, 245, 255)");
+            }
+        </script>
+    </head>
+    <body>           
+        <div class="top" id="">
+            <img src="../../icon/logo4.png" class="logo" style="height:40px;">
+            <h2 style="font-family: xueb;">&nbsp;&nbsp;|竹|编程工作室</h2>
+        </div>
+
+        <!--仅用于填充-->
+        <div class="top-false">
+            <p>YZX.|竹|编程工作室</p>
+        </div>
+        <!--仅用于填充-->
+
+        <div class="undertop">
+
+            <!--仅用于填充-->
+            <div class="left-false" id="">
+                <p>.</p>
+            </div>
+            <!--仅用于填充-->
+
+            <div class="left" id="">
+                
+                <div class="leftdhting" id="">
+                    <a href='./article.html'>&nbsp;&nbsp;.&nbsp;文章</a>
+                </div>
+
+                <div class="leftdht" id="">
+                    <a>&nbsp;&nbsp;.&nbsp;小程序</a>
+                </div>
+
+                <div class="leftdht" id="">
+                    <a href="./bookmark.html">&nbsp;&nbsp;.&nbsp;收藏夹</a>
+                </div>
+
+                <div class="leftdht" id="">
+                    <a href='../../index.html'>&nbsp;&nbsp;.&nbsp;关于</a>
+                </div>
+
+            </div>
+            
+            <div class="middle"  id="">
+                
+                <div class="card-PARCOLOR" id="" >
+                    <h2>常用颜色</h2>
+                    <div style="display: flex;margin-top:0px ;" >
+                        <div class="card-PARCOLOR" style="float: left;font-size: 22px;">
+                            <span style="background-color: #FFB6C1;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFB6C1 LightPink 浅粉红<br>
+                            <span style="background-color: #FFC0CB;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFC0CB Pink 粉红<br>
+                            <span style="background-color: #DC143C;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DC143C Crimson 深红/猩红<br>
+                            <span style="background-color: #FFF0F5;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFF0F5 LavenderBlush 淡紫红<br>
+                            <span style="background-color: #DB7093;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DB7093 PaleVioletRed 弱紫罗兰红<br>
+                            <span style="background-color: #FF69B4;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF69B4 HotPink 热情的粉红<br>
+                            <span style="background-color: #FF1493;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF1493 DeepPink 深粉红<br>
+                            <span style="background-color: #C71585;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#C71585 MediumVioletRed 中紫罗兰红<br>
+                            <span style="background-color: #DA70D6;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DA70D6 Orchid 暗紫色/兰花紫<br>
+                            <span style="background-color: #D8BFD8;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#D8BFD8 Thistle 蓟色<br>
+                            <span style="background-color: #DDA0DD;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DDA0DD Plum 洋李色/李子紫<br>
+                            <span style="background-color: #EE82EE;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#EE82EE Violet 紫罗兰<br>
+                            <span style="background-color: Magenta;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF00FF Magenta 洋红/玫瑰红<br>
+                            <span style="background-color: Fuchsia;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF00FF Fuchsia 紫红/灯笼海棠<br>
+                            <span style="background-color: #8B008B;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#8B008B DarkMagenta 深洋红<br>
+                            <span style="background-color: #800080;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#800080 Purple 紫色<br>
+                            <span style="background-color: #BA55D3;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#BA55D3 MediumOrchid 中兰花紫<br>
+                            <span style="background-color: #9400D3;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#9400D3 DarkViolet 暗紫罗兰<br>
+                            <span style="background-color: #9932CC;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#9932CC DarkOrchid 暗兰花紫<br>
+                            <span style="background-color: #4B0082;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#4B0082 Indigo 靛青/紫兰色<br>
+                            <span style="background-color: #8A2BE2;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#8A2BE2 BlueViolet 蓝紫罗兰<br>
+                            <span style="background-color: #9370DB;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#9370DB MediumPurple 中紫色<br>
+                            <span style="background-color: #7B68EE;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#7B68EE MediumSlateBlue 中暗蓝色/中板岩蓝<br>
+                            <span style="background-color: #6A5ACD;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#6A5ACD SlateBlue 石蓝色/板岩蓝<br>
+                            <span style="background-color: #483D8B;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#483D8B DarkSlateBlue 暗灰蓝色/暗板岩蓝<br>
+                            <span style="background-color: #E6E6FA;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#E6E6FA Lavender 淡紫色/熏衣草淡紫<br>
+                            <span style="background-color: #F8F8FF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F8F8FF GhostWhite 幽灵白<br>
+                            <span style="background-color: #0000FF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#0000FF Blue 纯蓝<br>
+                            <span style="background-color: #0000CD;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#0000CD MediumBlue 中蓝色<br>
+                            <span style="background-color: #191970;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#191970 MidnightBlue 午夜蓝<br>
+                            <span style="background-color: #00008B;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#00008B DarkBlue 暗蓝色<br>
+                            <span style="background-color: #000080;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#000080 Navy 海军蓝<br>
+                            <span style="background-color: #4169E1;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#4169E1 RoyalBlue 皇家蓝/宝蓝<br>
+                            <span style="background-color: #6495ED;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#6495ED CornflowerBlue 矢车菊蓝<br>
+                            <span style="background-color: #B0C4DE;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#B0C4DE LightSteelBlue 亮钢蓝<br>
+                            <span style="background-color: #778899;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#778899 LightSlateGray 亮蓝灰/亮石板灰<br>
+                            <span style="background-color: #708090;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#708090 SlateGray 灰石色/石板灰<br>
+                            <span style="background-color: #1E90FF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#1E90FF DodgerBlue 闪兰色/道奇蓝<br>
+                            <span style="background-color: #F0F8FF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F0F8FF AliceBlue 爱丽丝蓝<br>
+                            <span style="background-color: #4682B4;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#4682B4 SteelBlue 钢蓝/铁青<br>
+                            <span style="background-color: #87CEFA;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#87CEFA LightSkyBlue 亮天蓝色<br>
+                            <span style="background-color: #87CEEB;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#87CEEB SkyBlue 天蓝色<br>
+                            <span style="background-color: #00BFFF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#00BFFF DeepSkyBlue 深天蓝<br>
+                            <span style="background-color: #ADD8E6;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#ADD8E6 LightBlue 亮蓝<br>
+                            <span style="background-color: #B0E0E6;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#B0E0E6 PowderBlue 粉蓝色/火药青<br>
+                            <span style="background-color: #5F9EA0;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#5F9EA0 CadetBlue 军兰色/军服蓝<br>
+                            <span style="background-color: #F0FFFF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F0FFFF Azure 蔚蓝色<br>
+                            <span style="background-color: #E0FFFF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#E0FFFF LightCyan 淡青色<br>
+                            <span style="background-color: #AFEEEE;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#AFEEEE PaleTurquoise 弱绿宝石<br>
+                            <span style="background-color: Cyan;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#00FFFF Cyan 青色<br>
+                            <span style="background-color: Aqua;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#00FFFF Aqua 浅绿色/水色<br>
+                            <span style="background-color: #00CED1;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#00CED1 DarkTurquoise 暗绿宝石<br>
+                            <span style="background-color: #2F4F4F;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#2F4F4F DarkSlateGray 暗瓦灰色/暗石板灰<br>
+                            <span style="background-color: #008B8B;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#008B8B DarkCyan 暗青色<br>
+                            <span style="background-color: #008080;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#008080 Teal 水鸭色<br>
+                            <span style="background-color: #48D1CC;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#48D1CC MediumTurquoise 中绿宝石<br>
+                            <span style="background-color: #20B2AA;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#20B2AA LightSeaGreen 浅海洋绿<br>
+                            <span style="background-color: #40E0D0;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#40E0D0 Turquoise 绿宝石<br>
+                            <span style="background-color: #7FFFD4;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#7FFFD4 Aquamarine 宝石碧绿<br>
+                            <span style="background-color: #66CDAA;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#66CDAA MediumAquamarine 中宝石碧绿<br>
+                            <span style="background-color: #00FA9A;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#00FA9A MediumSpringGreen 中春绿色<br>
+                            <span style="background-color: #FFB6C1;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFB6C1 LightPink 浅粉红<br>
+                            <span style="background-color: #FFC0CB;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFC0CB Pink 粉红<br>
+                            <span style="background-color: #DC143C;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DC143C Crimson 深红/猩红<br>
+                            <span style="background-color: #FFF0F5;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFF0F5 LavenderBlush 淡紫红<br>
+                            <span style="background-color: #DB7093;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DB7093 PaleVioletRed 弱紫罗兰红<br>
+                            <span style="background-color: #FF69B4;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF69B4 HotPink 热情的粉红<br>
+                            <span style="background-color: #FF1493;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF1493 DeepPink 深粉红<br>
+                            <span style="background-color: #C71585;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#C71585 MediumVioletRed 中紫罗兰红<br>
+                            <span style="background-color: #DA70D6;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DA70D6 Orchid 暗紫色/兰花紫<br>
+                            <span style="background-color: #D8BFD8;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#D8BFD8 Thistle 蓟色<br>
+                            <span style="background-color: #DDA0DD;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DDA0DD Plum 洋李色/李子紫<br>
+                            <span style="background-color: #EE82EE;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#EE82EE Violet 紫罗兰<br>
+                            <span style="background-color: Magenta;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF00FF Magenta 洋红/玫瑰红<br>
+                            <span style="background-color: Fuchsia;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF00FF Fuchsia 紫红/灯笼海棠<br>
+                            <span style="background-color: #8B008B;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#8B008B DarkMagenta 深洋红<br>
+                            <span style="background-color: #800080;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#800080 Purple 紫色<br>
+                            <span style="background-color: #BA55D3;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#BA55D3 MediumOrchid 中兰花紫<br>
+                            <span style="background-color: #9400D3;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#9400D3 DarkViolet 暗紫罗兰<br>
+                            <span style="background-color: #9932CC;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#9932CC DarkOrchid 暗兰花紫<br>
+                            <span style="background-color: #4B0082;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#4B0082 Indigo 靛青/紫兰色<br>
+                            <span style="background-color: #8A2BE2;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#8A2BE2 BlueViolet 蓝紫罗兰<br>
+                            <span style="background-color: #9370DB;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#9370DB MediumPurple 中紫色<br>
+                            <span style="background-color: #7B68EE;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#7B68EE MediumSlateBlue 中暗蓝色/中板岩蓝<br>
+                            <span style="background-color: #6A5ACD;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#6A5ACD SlateBlue 石蓝色/板岩蓝<br>
+                            <span style="background-color: #483D8B;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#483D8B DarkSlateBlue 暗灰蓝色/暗板岩蓝<br>
+                            <span style="background-color: #E6E6FA;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#E6E6FA Lavender 淡紫色/熏衣草淡紫<br>
+                            <span style="background-color: #F8F8FF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F8F8FF GhostWhite 幽灵白<br>
+                            <span style="background-color: #0000FF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#0000FF Blue 纯蓝<br>
+                            <span style="background-color: #0000CD;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#0000CD MediumBlue 中蓝色<br>   
+                        </div>
+                        <div class="card-PARCOLOR" style="float: right;font-size: 22px;">
+                            <span style="background-color: #191970;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#191970 MidnightBlue 午夜蓝<br>
+                            <span style="background-color: #00008B;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#00008B DarkBlue 暗蓝色<br>
+                            <span style="background-color: #000080;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#000080 Navy 海军蓝<br>
+                            <span style="background-color: #4169E1;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#4169E1 RoyalBlue 皇家蓝/宝蓝<br>
+                            <span style="background-color: #6495ED;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#6495ED CornflowerBlue 矢车菊蓝<br>
+                            <span style="background-color: #B0C4DE;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#B0C4DE LightSteelBlue 亮钢蓝<br>
+                            <span style="background-color: #778899;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#778899 LightSlateGray 亮蓝灰/亮石板灰<br>
+                            <span style="background-color: #708090;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#708090 SlateGray 灰石色/石板灰<br>
+                            <span style="background-color: #1E90FF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#1E90FF DodgerBlue 闪兰色/道奇蓝<br>
+                            <span style="background-color: #F0F8FF;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F0F8FF AliceBlue 爱丽丝蓝<br>
+                            <span style="background-color: #F5FFFA;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F5FFFA MintCream 薄荷奶油<br>
+                            <span style="background-color: #00FF7F;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#00FF7F SpringGreen 春绿色<br>
+                            <span style="background-color: #3CB371;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#3CB371 MediumSeaGreen 中海洋绿<br>
+                            <span style="background-color: #2E8B57;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#2E8B57 SeaGreen 海洋绿<br>
+                            <span style="background-color: #F0FFF0;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F0FFF0 Honeydew 蜜色/蜜瓜色<br>
+                            <span style="background-color: #90EE90;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#90EE90 LightGreen 淡绿色<br>
+                            <span style="background-color: #98FB98;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#98FB98 PaleGreen 弱绿色<br>
+                            <span style="background-color: #8FBC8F;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#8FBC8F DarkSeaGreen 暗海洋绿<br>
+                            <span style="background-color: #32CD32;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#32CD32 LimeGreen 闪光深绿<br>
+                            <span style="background-color: #00FF00 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#00FF00 Lime 闪光绿<br>
+                            <span style="background-color: #228B22 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#228B22 ForestGreen 森林绿<br>
+                            <span style="background-color: #008000 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#008000 Green 纯绿<br>
+                            <span style="background-color: #006400 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#006400 DarkGreen 暗绿色<br>
+                            <span style="background-color: #7FFF00 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#7FFF00 Chartreuse 黄绿色/查特酒绿<br>
+                            <span style="background-color: #7CFC00 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#7CFC00 LawnGreen 草绿色/草坪绿<br>
+                            <span style="background-color: #ADFF2F ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#ADFF2F GreenYellow 绿黄色<br>
+                            <span style="background-color: #556B2F ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#556B2F DarkOliveGreen 暗橄榄绿<br>
+                            <span style="background-color: #9ACD32 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#9ACD32 YellowGreen 黄绿色<br>
+                            <span style="background-color: #6B8E23 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#6B8E23 OliveDrab 橄榄褐色<br>
+                            <span style="background-color: #F5F5DC ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F5F5DC Beige 米色/灰棕色<br>
+                            <span style="background-color: #FAFAD2 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FAFAD2 LightGoldenrodYellow 亮菊黄<br>
+                            <span style="background-color: #FFFFF0 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFFFF0 Ivory 象牙色<br>
+                            <span style="background-color: #FFFFE0 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFFFE0 LightYellow 浅黄色<br>
+                            <span style="background-color: #FFFF00 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFFF00 Yellow 纯黄<br>
+                            <span style="background-color: #808000 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#808000 Olive 橄榄<br>
+                            <span style="background-color: #BDB76B ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#BDB76B DarkKhaki 暗黄褐色/深卡叽布<br>
+                            <span style="background-color: #FFFACD ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFFACD LemonChiffon 柠檬绸<br>
+                            <span style="background-color: #EEE8AA ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#EEE8AA PaleGoldenrod 灰菊黄/苍麒麟色<br>
+                            <span style="background-color: #F0E68C ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F0E68C Khaki 黄褐色/卡叽布<br>
+                            <span style="background-color: #FFD700 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFD700 Gold 金色<br>
+                            <span style="background-color: #FFF8DC ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFF8DC Cornsilk 玉米丝色<br>
+                            <span style="background-color: #DAA520 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DAA520 Goldenrod 金菊黄<br>
+                            <span style="background-color: #B8860B ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#B8860B DarkGoldenrod 暗金菊黄<br>
+                            <span style="background-color: #FFFAF0 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFFAF0 FloralWhite 花的白色<br>
+                            <span style="background-color: #FDF5E6 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FDF5E6 OldLace 老花色/旧蕾丝<br>
+                            <span style="background-color: #F5DEB3 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F5DEB3 Wheat 浅黄色/小麦色<br>
+                            <span style="background-color: #FFE4B5 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFE4B5 Moccasin 鹿皮色/鹿皮靴<br>
+                            <span style="background-color: #FFA500 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFA500 Orange 橙色<br>
+                            <span style="background-color: #FFEFD5 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFEFD5 PapayaWhip 番木色/番木瓜<br>
+                            <span style="background-color: #FFEBCD ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFEBCD BlanchedAlmond 白杏色<br>
+                            <span style="background-color: #FFDEAD ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFDEAD NavajoWhite 纳瓦白/土著白<br>
+                            <span style="background-color: #FAEBD7 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FAEBD7 AntiqueWhite 古董白<br>
+                            <span style="background-color: #D2B48C ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#D2B48C Tan 茶色<br>
+                            <span style="background-color: #DEB887 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DEB887 BurlyWood 硬木色<br>
+                            <span style="background-color: #FFE4C4 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFE4C4 Bisque 陶坯黄<br>
+                            <span style="background-color: #FF8C00 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF8C00 DarkOrange 深橙色<br>
+                            <span style="background-color: #FAF0E6 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FAF0E6 Linen 亚麻布<br>
+                            <span style="background-color: #CD853F ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#CD853F Peru 秘鲁色<br>
+                            <span style="background-color: #FFDAB9 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFDAB9 PeachPuff 桃肉色<br>
+                            <span style="background-color: #F4A460 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F4A460 SandyBrown 沙棕色<br>
+                            <span style="background-color: #D2691E ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#D2691E Chocolate 巧克力色<br>
+                            <span style="background-color: #8B4513 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#8B4513 SaddleBrown 重褐色/马鞍棕色<br>
+                            <span style="background-color: #FFF5EE ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFF5EE Seashell 海贝壳<br>
+                            <span style="background-color: #A0522D ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#A0522D Sienna 黄土赭色<br>
+                            <span style="background-color: #FFA07A ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFA07A LightSalmon 浅鲑鱼肉色<br>
+                            <span style="background-color: #FF7F50 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF7F50 Coral 珊瑚<br>
+                            <span style="background-color: #FF4500 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF4500 OrangeRed 橙红色<br>
+                            <span style="background-color: #E9967A ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#E9967A DarkSalmon 深鲜肉/鲑鱼色<br>
+                            <span style="background-color: #FF6347 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF6347 Tomato 番茄红<br>
+                            <span style="background-color: #FFE4E1 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFE4E1 MistyRose 浅玫瑰色/薄雾玫瑰<br>
+                            <span style="background-color: #FA8072 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FA8072 Salmon 鲜肉/鲑鱼色<br>
+                            <span style="background-color: #FFFAFA ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFFAFA Snow 雪白色<br>
+                            <span style="background-color: #F08080 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F08080 LightCoral 淡珊瑚色<br>
+                            <span style="background-color: #BC8F8F ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#BC8F8F RosyBrown 玫瑰棕色<br>
+                            <span style="background-color: #CD5C5C ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#CD5C5C IndianRed 印度红<br>
+                            <span style="background-color: #FF0000 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FF0000 Red 纯红<br>
+                            <span style="background-color: #A52A2A ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#A52A2A Brown 棕色<br>
+                            <span style="background-color: #B22222 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#B22222 FireBrick 火砖色/耐火砖<br>
+                            <span style="background-color: #8B0000 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#8B0000 DarkRed 深红色<br>
+                            <span style="background-color: #800000 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#800000 Maroon 栗色<br>
+                            <span style="background-color: #FFFFFF ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#FFFFFF White 纯白<br>
+                            <span style="background-color: #F5F5F5 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#F5F5F5 WhiteSmoke 白烟<br>
+                            <span style="background-color: #DCDCDC ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#DCDCDC Gainsboro 淡灰色<br>
+                            <span style="background-color: #D3D3D3 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#D3D3D3 LightGrey 浅灰色<br>
+                            <span style="background-color: #C0C0C0 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#C0C0C0 Silver 银灰色<br>
+                            <span style="background-color: #A9A9A9 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#A9A9A9 DarkGray 深灰色<br>
+                            <span style="background-color: #808080 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#808080 Gray 灰色<br>
+                            <span style="background-color: #696969 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#696969 DimGray 暗淡灰<br>
+                            <span style="background-color: #000000 ;width: 5px;height: 5px; ">&nbsp;&nbsp;</span>#000000 Black 纯黑<br>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card-BOTTOM" id="">
+                    <h4>Copyright © 2022-2022 |竹|编程工作室 ZiXuanYuan 版权所有</h4>
+                </div>
+                
+
+            </div>
+
+
+
+        </div>
+
+    </body>
+</html>
