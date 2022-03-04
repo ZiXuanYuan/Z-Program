@@ -2,14 +2,17 @@
 
 <html>
     <head>
+        
         <!--外部js文件导入，以及icon的搭建-->
-        <link rel="icon" href="icon/yzx.png" >
-        <link rel="stylesheet" href="./templates/style/Every.css">
+
+        <link rel="icon" href="../../icon/yzx.png" >
+        <link rel="stylesheet" href="../style/Every.css">
         <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-        <script src="./templates/js/Every.js"></script>
+        <script src="../js/Every.js"></script>
         <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
         <!--外部js文件导入，以及icon的搭建-->
 
         <meta charset="utf-8"> 
@@ -20,7 +23,7 @@
 
             @font-face {
                 font-family:xueb;
-                src: url(static/font/f1.ttf);
+                src: url(../../static/font/f1.ttf);
             }
             
             html
@@ -124,7 +127,22 @@
                 /*display :flex;*/
                 margin: 20px;
             }
-            .card-INTERNET-INTRODUCE
+            .card-SMALLTITTLE
+            {
+                background-color:rgb(240, 255, 232);
+                border: none;
+                outline: none;  
+                border-radius: 10px; /* 圆角 */
+                padding: 5px;
+                margin-bottom: 15px;
+                margin-top: 10px;
+                float: none;
+                width: 100%;
+                height: auto;
+                text-align: left;
+                padding: 20px;
+            }
+            .card-PARAGRAGH
             {
                 background-color:rgb(253, 253, 222);
                 border: none;
@@ -136,40 +154,40 @@
                 float: none;
                 width: 100%;
                 height: auto;
-                text-align: center;
+                text-align: left;
                 padding: 20px;
             }
-            .card-I-INTRODUCE
+            .card-PARAGRAGH-LITTLE
             {
                 background-color:rgb(253, 253, 222);
                 border: none;
                 outline: none;  
                 border-radius: 10px; /* 圆角 */
-                padding: 5px;
-                margin-bottom: 15px;
-                margin-top: 10px;
-                float: left;
-                width: 40%;
-                height: auto;
-                text-align: center;
-                padding: 20px;
-            }
-            .card-JOIN-US
-            {
-                background-color:rgb(253, 253, 222);
-                border: none;
-                outline: none;  
-                border-radius: 10px; /* 圆角 */
-                padding: 5px;
-                margin-bottom: 15px;
-                margin-top: 10px;
-                float: right;
+                margin-bottom: 7px;
+                margin-top: 7px;
+                float: none;
                 width: 100%;
                 height: auto;
-                text-align: center;
+                text-align: left;
                 padding: 20px;
+                display: flex;
             }
-            .card-ABOUT-NAME
+            .card-PARAGRAGH-LITTLE-SQUARE
+            {
+                background-color:rgb(253, 253, 222);
+                border: none;
+                outline: none;  
+                border-radius: 10px; /* 圆角 */
+                margin-left: 7px;
+                margin-right: 7px;
+                float: none;
+                width: 20%;
+                height: auto;
+                text-align: left;
+                padding: 20px;
+                display: flex;
+            }
+            .card-BOTTOM
             {
                 background-color:rgb(253, 253, 222);
                 border: none;
@@ -178,10 +196,10 @@
                 padding: 5px;
                 margin-bottom: 15px;
                 margin-top: 10px;
-                float: right;
-                width: 58%;
+                float: none;
+                width: 100%;
                 height: auto;
-                text-align: center;
+                text-align:center;
                 padding: 20px;
             }
             .leftdht
@@ -219,17 +237,17 @@
             }
         </script>
     </head>
-    <body> 
-
+    <body>     
+        
         <!--返回顶部按钮-->
         <button onclick="topFunction()" id="myBtn" title="返回顶部" >
-            <img src="./sign/arrow-up-circle.svg" style="width:40px;height:40px;" >
+            <img src="../../sign/arrow-up-circle.svg" style="width:40px;height:40px;" >
         </button>
-        <!--返回顶部按钮-->          
+        <!--返回顶部按钮-->         
 
-
+        
         <div class="top" id="">
-            <img src="icon/logo4.png" class="logo" style="height:40px;">
+            <img src="../../icon/logo4.png" class="logo" style="height:40px;">
             <h2 style="font-family: xueb;">&nbsp;&nbsp;|竹|编程工作室</h2>
         </div>
 
@@ -250,66 +268,35 @@
             <div class="left" id="">
                 
                 <div class="leftdht" id="">
-                    <a href='./templates/html/article.html'>&nbsp;&nbsp;.&nbsp;文章</a>
-                </div>
-
-                <div class="leftdht" id="">
-                    <a href='./templates/html/littleexe.html'>&nbsp;&nbsp;.&nbsp;小程序</a>
-                </div>
-
-                <div class="leftdht" id="">
-                    <a href="./templates/html/bookmark.html">&nbsp;&nbsp;.&nbsp;收藏夹</a>
+                    <a href='./article.html'>&nbsp;&nbsp;.&nbsp;文章</a>
                 </div>
 
                 <div class="leftdhting" id="">
-                    <a href='./index.html'>&nbsp;&nbsp;.&nbsp;关于</a>
+                    <a href='./littleexe.html'>&nbsp;&nbsp;.&nbsp;小程序</a>
+                </div>
+
+                <div class="leftdht" id="">
+                    <a href="./bookmark.html">&nbsp;&nbsp;.&nbsp;收藏夹</a>
+                </div>
+
+                <div class="leftdht" id="">
+                    <a href='../../index.html'>&nbsp;&nbsp;.&nbsp;关于</a>
                 </div>
 
             </div>
             
             <div class="middle"  id="">
-                <div class="card-INTERNET-INTRODUCE" id="">
-                    <h2>网站简介</h2>
-                    <h4>意义：本站致力于给那些热爱编程的人提供一些便捷</h4>
-                    <h4>了解更多：点击左方或上方的菜单栏以了解更多该站</h4>
-                    <h3>HELLO WORLD!开始编程吧！加油！</h3>
-                    <h4>Copyright © 2022-2022 |竹|编程工作室 ZiXuanYuan 版权所有</h4>
+                <div class="card-SMALLTITTLE">
+                    <h3>*^节日快乐^*</h3>
                 </div>
-
-                <div class="card-I-INTRODUCE" id="">
-                    <h2>AboutMyself关于我</h2>
-                    <h4>Name姓名: ZiXuanYuan</h4>
-                    <h4>Age年龄: 1 0 0</h4>
-                    <h4>Habits兴趣: 编程、魔方</h4>
-                    <h4>Ability技能: Python C++ Html</h4>
-                    <h4>Contact联系:WeChat: yzx_6723</h4>
-                    <h4>     E-Mail: yzx_2009@126.com</h4>
+                <div class="card-PARAGRAGH">
+                    <div class="card-PARAGRAGH-LITTLE">
+                        <a href="../../littleexe/DINO小恐龙轻量版.rar">
+                            <img src="../../littleexe/pic/DINO.png" height="90px"><h5>DINO小恐龙轻量版</h5>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="card-ABOUT-NAME" id="">
-                    <h2>AboutNAME关于名称</h2>
-                    <br>
-                    <h4>1.竹是花中四君子,代表工作室每个人顽强的品质</h4>
-                    <h4>2.谐音'逐'---追逐,工作室的每一个成员都要追逐的己的梦想</h4>
-                    <h4>3.竹字头是一个部首,表明'竹'字当头</h4>
-                    <h4>4.竹子是喜阳的,我希望每一个成员都能积极向上</h4>
-                    <h2>加油！去'竹'梦吧！</h2>
-                </div>
-
-                <div class="card-JOIN-US" id="">
-                    <h2>JOIN-US 加入我们</h2>
-                    <h4>1.工作室的每个人要做到作品质量高</h4>
-                    <h4>2.在这里每个人都可以发表自己的见解与想法若有好想法却实现不了的，可以让大家一起帮忙</h4>
-                    <h4>3.竹字头是一个部首,表明'竹'字当头</h4>
-                    <h4>4.宁愿不发作品，也不水作</h4>
-                </div>
-                <div class="card-JOIN-US" id="">
-                    <h4>Copyright © 2022-2022 |竹|编程工作室 ZiXuanYuan 版权所有</h4>
-                </div>
-                
-
-            </div>
-
+            </div>    
 
 
         </div>

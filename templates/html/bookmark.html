@@ -3,12 +3,15 @@
 <html>
     <head>
         <!--外部js文件导入，以及icon的搭建-->
-        <link rel="icon" href="../../icon/yzx.png" >
 
+        <link rel="icon" href="../../icon/yzx.png" >
+        <link rel="stylesheet" href="../style/Every.css">
         <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="../js/Every.js"></script>
         <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
         <!--外部js文件导入，以及icon的搭建-->
 
         <meta charset="utf-8"> 
@@ -188,7 +191,15 @@
             }
         </script>
     </head>
-    <body>           
+    <body>     
+        
+        <!--返回顶部按钮-->
+        <button onclick="topFunction()" id="myBtn" title="返回顶部" >
+            <img src="../../sign/arrow-up-circle.svg" style="width:40px;height:40px;" >
+        </button>
+        <!--返回顶部按钮-->         
+
+
         <div class="top" id="">
             <img src="../../icon/logo4.png" class="logo" style="height:40px;">
             <h2 style="font-family: xueb;">&nbsp;&nbsp;|竹|编程工作室</h2>
@@ -215,7 +226,7 @@
                 </div>
 
                 <div class="leftdht" id="">
-                    <a>&nbsp;&nbsp;.&nbsp;小程序</a>
+                    <a href='./littleexe.html'>&nbsp;&nbsp;.&nbsp;小程序</a>
                 </div>
 
                 <div class="leftdhting" id="">
